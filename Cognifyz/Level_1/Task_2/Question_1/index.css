@@ -1,0 +1,10 @@
+#colorButton {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-shadow: 2px 2px #656565;
+    font-size: large;
+    font-weight: 600;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
