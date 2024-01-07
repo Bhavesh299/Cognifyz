@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greeting Alert</title>
+    <style>
+      #Button {
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: large;
+        font-weight: 600;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="Button" onclick="displayGreeting()">
+      Click For Greeting Message
+    </button>
+  </body>
+</html>
+<script>
+  function displayGreeting() {
+    // Get the current time
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+
+    // Define the greeting based on the time
+    var greeting;
+    if (hours < 12) {
+      greeting = "Good morning...!";
+    } else if (hours < 18) {
+      greeting = "Good afternoon...!";
+    } else {
+      greeting = "Good evening...!";
+    }
+
+    // Display the greeting in an alert box
+
+    alert(greeting);
+  }
+</script>
