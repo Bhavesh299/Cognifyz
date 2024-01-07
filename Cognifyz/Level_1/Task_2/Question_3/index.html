@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h2>Simple Calculator</h2>
+    <label for="number1">Number 1:</label>
+    <input type="number" id="number1" placeholder="Enter a number" />
+
+    <br />
+
+    <label for="number2">Number 2:</label>
+    <input type="number" id="number2" placeholder="Enter another number" />
+
+    <br />
+    <button onclick="addNumbers()">Add Numbers</button>
+
+    <br />
+    <div class="div">
+      <p style="margin: 0; display: inline">Total is :</p>
+      <p style="margin: 0; display: inline; align: right" id="total">0</p>
+    </div>
+  </body>
+</html>
+<script src="index.js"></script>
